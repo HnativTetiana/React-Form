@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+## Here is the link to the site: https://react-form2024.netlify.app
+ 
+### Tasks and form layout from the Front-end React JS Web Development Course: https://www.udemy.com/course/aaspring21-frontend-course/?couponCode=SKILLS4SALEB
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

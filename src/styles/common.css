@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@500&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#root {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #323232;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Common */
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    line-height: 32.02px;
+    margin-bottom: 35px;
+}
+
+.svg-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+}
+
+.decoration .circle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    line-height: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+
+    border: 1px solid #376FDB;
+}
+
+.blue-circle {
+    color: #FFFFFF;
+    background-color: #376FDB;
+}
+
+.white-circle {
+    color: #376FDB;
+}
+
+.decoration .line {
+    color: #E4E4E4;
+    box-sizing: border-box;
+    width: 90px;
+    height: 1px;
+    margin: 0;
+}
+
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-field {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #757575;
+    line-height: 19px;
+    letter-spacing: 0.15px;
+
+    box-sizing: border-box;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+
+    padding: 10.5px 12px;
+    width: 362px;
+    height: 40px;
+
+}
+
+.gender-title,
+.work-categories-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 0.15px;
+    margin-bottom: 25.5px;
+}
+
+.gender-list,
+.work-categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.gender-list label,
+.work-categories label {
+    color: #363636DE;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 28px;
+}
+
+.buttons button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+
+    height: 36px;
+    padding: 6px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.previous-button {
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue-button,
+.submit-button {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #376FDB;
+    border-radius: 4px;
+}
+
+/* --------------------------------------------------------------------- Adaptive ---------------------------------------------------------------- */
+
+@media (max-width: 425px) {
+    .form-field {
+        width: 300px;
+    }
+
+    .buttons {
+        right: 5px;
+    }
+}

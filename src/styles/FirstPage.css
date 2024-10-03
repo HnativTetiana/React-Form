@@ -1,0 +1,103 @@
+.first-page-title {
+    font-weight: bold;
+    -webkit-text-stroke: 1px #000000;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.first-page-form {
+    margin-top: 35px;
+}
+
+.first-name-input,
+.phone-number-input {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.gender-container {
+    margin-top: 30.5px;
+}
+
+.gender-list input[type="radio"] {
+    margin: 0;
+    margin-right: 16px;
+
+    box-sizing: border-box;
+    width: 17px;
+    height: 17px;
+    border: 1.5px solid #7E7E7E;
+
+    border-radius: 50%;
+    appearance: none;
+    cursor: pointer;
+}
+
+.gender-list input[type="radio"]:checked {
+    background-color: #7E7E7E;
+}
+
+.other-gender-input {
+    color: #363636DE;
+    width: 138px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    margin-left: 13px;
+}
+
+.phone-container {
+    display: flex;
+    gap: 6px;
+    margin-top: 48px;
+    margin-bottom: 46px;
+}
+
+.phone-container select {
+    color: #323232;
+    width: 72px;
+    height: 40px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.phone-select-positioning {
+    position: relative;
+    width: 72px;
+}
+
+.phone-select-container {
+    position: relative;
+}
+
+.phone-select-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    background: url('data:image/svg+xml;charset=utf8,<svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L5 5L10 0H0Z" fill="black" fill-opacity="0.54"/></svg>');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-50%);
+}
+
+.phone-number-input {
+    width: 280px;
+    position: relative;
+    bottom: 6px;
+}
+
+/* --------------------------------------------------------------------- Adaptive ---------------------------------------------------------------- */
+
+@media (max-width: 425px) {
+    .phone-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .phone-number-input {
+        width: 300px;
+    }
+}

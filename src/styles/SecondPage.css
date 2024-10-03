@@ -1,0 +1,53 @@
+.work-categories {
+    margin-top: 45.5px;
+    margin-bottom: 43px;
+    position: relative;
+    left: 12px;
+}
+
+.work-categories-list input[type="checkbox"] {
+    margin: 0;
+    margin-right: 12px;
+
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #7E7E7E;
+
+    appearance: none;
+    cursor: pointer;
+}
+
+.work-categories-list input[type="checkbox"]:checked {
+    background-color: #7E7E7E;
+}
+
+.password-message {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: rgba(0, 0, 0, 0.54);
+    width: 362px;
+    margin-bottom: 21px;
+    margin-top: 3px;
+}
+
+input[type="password"]:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+.second-page-buttons {
+    right: 24px;
+}
+
+/* --------------------------------------------------------------------- Adaptive ---------------------------------------------------------------- */
+
+@media (max-width: 425px) {
+    .password-message {
+        width: 300px;
+    }
+
+    .second-page-buttons {
+        right: 5px;
+    }
+}
